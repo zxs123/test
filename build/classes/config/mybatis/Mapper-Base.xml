@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.instree.core.base.BaseDao">
+	<!-- 新增 -->
+	<insert id="create">
+		<![CDATA[ ${value} ]]>
+	</insert>
+
+	<!-- 批量新增 -->
+	<insert id="createOfBatch">
+		${value}
+	</insert>
+
+	<!-- 根据ID删除 -->
+	<delete id="removeById">
+		<![CDATA[ ${value} ]]>
+	</delete>
+	
+	<!-- 根据指定字段删除 -->
+	<delete id="removeObjOfBatchByColumn">
+		 ${value} 
+	</delete>
+	
+	<!-- 根据指定字段删除 -->
+	<delete id="removeByColumnName">
+		<![CDATA[ ${value} ]]>
+	</delete>
+
+	<!-- 批量删除 -->
+	<delete id="removeOfBatch">
+		${value}
+	</delete>
+
+	<!-- 批量删除 -->
+	<delete id="removeAll">
+		${value}
+	</delete>
+
+	<!-- 更新 -->
+	<update id="modify">${value}</update>
+	
+	<!-- 根据ID查询单个 -->
+	<select id="findOneById" resultType="hashmap">
+		${value}
+	</select>
+
+	<!-- 查询所有 -->
+	<select id="findAll" resultType="hashmap">
+		${value}
+	</select>
+	<!-- 根据指定字段查询数据 -->
+	<select id="findOneByColumnName" resultType="hashmap">
+		${value}
+	</select>
+	<!-- 根据指定字段查询数据 -->
+	<select id="findListByColumnName" resultType="hashmap">
+		${value}
+	</select>
+
+	<!-- 查询总数量 -->
+	<select id="findAllCount" resultType="Long">
+		${value}
+	</select>
+	
+	<select id="isExists" resultType="Boolean">
+		${value}
+	</select>
+	<select id="isExistsByColumn" resultType="Boolean">
+		${value}
+	</select>
+	
+</mapper>
