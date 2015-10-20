@@ -9,7 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<<<<<<< HEAD
 	第一个页面
 	第一个页面！test
 	第一个页面！test+test2
