@@ -9,8 +9,11 @@
 <title>Insert title here</title>
 </head>
 <body>
+<<<<<<< HEAD
 	第一个页面
-	第一个页面！test+test2+test3
-	第二个页面
+	第一个页面！test
+=======
+	第一个页面！test+test2
+>>>>>>> refs/remotes/origin/zx
 </body>
 </html>
